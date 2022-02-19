@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/index.css" />
+  <title>Contacto</title>
+</head>
+
+<body>
+  <header class="head">
+    <!-- Nav FLEXBOX -->
+    <nav class="head__nav">
+      <div id="nav__logoSapt">
+        <a class="a" href="../index.html">
+          <h1>SAPT</h1>
+        </a>
+        <a class="a" href="../index.html">
+          <p>' Todos por un mejor país '</p>
+        </a>
+      </div>
+      <ul class="nav__urls">
+        <a class="a" href="../index.html" class="nav__items">
+          <li>
+            Proyecto / Empresa
+          </li>
+        </a>
+        <a class="a" href="../pages/Conocenos.html" class="nav__items">
+          <li>
+            Conocenos / ¿Quienes somos?
+          </li>
+        </a>
+        <a class="a" href="../pages/Galeria.html" class="nav__items">
+          <li>
+            Galeria / Recursos
+          </li>
+        </a>
+        <a class="a" href="../pages/Servicios.html" class="nav__items">
+          <li>
+            Servicios / Soluciones
+          </li>
+        </a>
+        <a class="a" href="../pages/Contacto.html" class="nav__items">
+          <li>
+            Contacto / Apoyar
+          </li>
+        </a>
+      </ul>
+    </nav>
+    <section class="identificador">
+      <article>
+        <div>
+          <h1>Contacto</h1>
+        </div>
+      </article>
+    </section>
+  </header>
+  <main id="main_4">
+      <section>
+        <h1>Contactanos</h1>
+        <form action="#">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" required />
+          <select name="solicitud" id="solicitud" required>
+            <option value="">Solicitudes</option>
+            <option value="">Tengo una idea</option>
+            <option value="">Quiero apoyar</option>
+            <option value="">Saber más o otros</option>
+          </select>
+          <label for="correo">Email</label>
+          <input type="email" name="correo" id="correo" required />
+          <textarea name="descripcion" id="" cols="30" rows="10"
+            placeholder="Escribenos y conoce más acerca de como apoyar"></textarea>
+          <label for="tel">Telefono</label>
+          <input type="tel" name="tel" id="tel" />
+          <input type="submit" value="Contactar" />
+        </form>
+      </section>
+  </main>
+
+  <footer>
+    <div class="footer_separador">
+      <img src="../images/otras/wave.svg" alt="" />
+    </div>
+    <div class="footer">
+      <!-- contenedor -->
+      <div class="redes">
+        <!-- icon secundario -->
+
+        <div id="footer_info">
+          <img src="../images/icons/icon_apoyo.png" alt="" />
+          <h4>'Todos por más'</h4>
+        </div>
+        <!-- informacion de derechos -->
+        <span>
+          <p>Copyrigth@2022 Diego Casas</p>
+        </span>
+
+        <!-- imagenes de redes -->
+        <div>
+          <img src="../images/icons/linkedin-logo-36.png" />
+          <img src="../images/icons/github-logo-36.png" />
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
