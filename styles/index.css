@@ -167,6 +167,15 @@
     margin: 0 5%;
     display: flex;
     flex-direction: column;
+    padding: 50px;
+}
+.contenido figure{
+    filter: grayscale(1);
+}
+.contenido figure:hover{
+    filter: grayscale(0);
+    transform: scale(1.2, 1.0);
+    
 }
 /* pie de pagina  */
 
@@ -336,6 +345,12 @@
     width: 500px;
 }
 
+.textoAnimacion:hover{
+    animation-name: texto;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
 /* grid footer */
 
 
@@ -387,6 +402,39 @@
 }
 
 
+/* Animacion de texto */
+@keyframes texto{
+    0%{
+        padding-bottom: 18px;
+        font-size: 30px;
+        color: #0F2027;  /* fallback for old browsers */
+
+    }
+    25%{
+        padding-bottom: 18px;
+        font-size: 25px;
+        color: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+
+
+    }
+    50%{
+        padding-bottom: 18px;
+        color: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        font-size: 30px;
+    }
+    75%{
+        padding-bottom: 18px;
+        color: #0F2027;  /* fallback for old browsers */
+        font-size: 25px;
+    }
+    100%{
+        padding-bottom: 18px;
+        color: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+        font-size: 30px;
+    }
+}
+
+
 /* MediaQuerys */
 
 @media (max-width: 1101px) {
@@ -412,7 +460,9 @@
     .banner_image{
         height: 350px;
         width: 250px;
+        
     }
+
     .reset_banner{
         display: flex;
         justify-content:space-evenly;
