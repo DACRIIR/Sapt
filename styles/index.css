@@ -33,11 +33,9 @@
 
 /* nav__logoSapt o logo del navbar */
 
-.head__nav #nav__logoSapt{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.nav__logoSapt img{
+    height: 250px;
+    width: 250px;
 }
 
 /* h1 o encabezado del sitio */
@@ -197,16 +195,15 @@
 
 /* informacion del footer  */
 
-#footer_info{
-    display: flex;
-    flex-direction:column;
-    justify-content: space-around;
-    align-items: center;
+#footer_info h4{
+    color: #0f0c29;
 }
+
 
 /* imagen del footer */
 
 #footer_info img{
+    margin-top: 20px;
     height:90px;
     width: 90px;
 }
@@ -214,7 +211,7 @@
 /* Page Conocenos */
 
 #main_2{
-    margin: 0 20%;
+    margin: 5rem 10%;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 400px;
