@@ -2,6 +2,19 @@
 @import './variables.scss';
 
 
+/* Extends */
+
+.enlaces{
+    text-decoration: none;
+    color: $color-black;
+}
+
+/* mixins */
+
+@mixin display( $flex ){
+    display: $flex;
+}
+
 /* imagen o logotipo */
 .nav__logoSapt{
     img{
@@ -12,18 +25,16 @@
 
 /* Contenido */
 .informacion{
-    display: flex;
+    @include display( flex );
     flex-wrap: wrap;
     justify-content:center;
     align-items: center;
-    flex-wrap: wrap;
 
     section{
         div{
             text-align: center;
             a{
-                text-decoration: none;
-                color: $color-black;
+                @extend .enlaces;
                 font-family: 'Rowdies', cursive;
                 font-size:large;
             }
@@ -35,7 +46,7 @@
 /* contenido  */
 .contenido {  
     margin: 0 5%;
-    display: flex;
+    @include display( flex );
     flex-direction: column;
     padding: 50px;
 

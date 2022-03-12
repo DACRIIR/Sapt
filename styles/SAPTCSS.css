@@ -1,5 +1,11 @@
 /* imports */
 /* variables */
+/* Extends */
+.enlaces, .informacion section div a {
+  text-decoration: none;
+  color: #203A43; }
+
+/* mixins */
 /* imagen o logotipo */
 .nav__logoSapt img {
   height: 250px;
@@ -10,13 +16,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; }
+  align-items: center; }
   .informacion section div {
     text-align: center; }
     .informacion section div a {
-      text-decoration: none;
-      color: #203A43;
       font-family: 'Rowdies', cursive;
       font-size: large; }
 
