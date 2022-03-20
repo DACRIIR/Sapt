@@ -1,0 +1,383 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*  index  // Inicio */
+
+.grid{
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 700px 990px 300px;
+    grid-template-areas: "l1"
+                         "l2"
+                         "l3";
+}
+
+/* Header // Inicio */
+
+.grid__n1{
+    background-image: url('../images/svg/wave__1.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* header layout */
+
+.grid__l1{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 500px;
+    grid-template-areas: " n1 "
+                         " n2 ";
+}
+
+.grid__l1--areas{
+    grid-area: l1;
+}
+
+/* Navbar  */
+
+.grid__n1{
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    grid-template-rows: 200px;
+    grid-template-areas: " i1 i2 i3 ";
+}
+
+.grid__n1--areas{
+    grid-area: n1;
+}
+
+.grid__n2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 500px;
+    grid-template-areas: " g1 g2 ";
+}
+
+.grid__n2--areas{
+    grid-area: n2;
+}
+
+/* Navbar areas */
+.grid__i1--areas{
+    grid-area: i1;
+    justify-self: left;
+    align-self: center;
+}
+
+.grid__i2--areas{
+    grid-area: i2;
+}
+
+.grid__i3--areas{
+    grid-area: i3;
+    justify-self: center;
+    align-self: center;
+}
+
+.grid__g1{
+    grid-area: g1;
+    justify-self: center;
+    align-self: center;
+}
+
+.grid__g2{
+    grid-area: g2;
+    justify-self: left;
+    align-self: center;
+}
+
+
+/* items del navbar */
+
+/* logo SAPT */
+.grid__i1 img{
+    width: 350px;
+    height:350px;
+}
+
+/* lista navbar */
+.grid__i2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grid__i2 a{
+    color: rgba(20, 18, 18, 0.63);
+    text-decoration: none;
+}
+
+.grid__i2 a li{
+    list-style: none;
+}
+
+/* Logo Autor */
+.grid__i3 img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 6px 3px 35px black;
+}
+ 
+/* Header // Fin */
+
+/* main // Inicio */
+.grid__l2--areas{
+    grid-area: l2;
+}
+
+.grid__l2{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 247px 248px 247px 248px;
+    grid-template-areas: " m1 m1 m1 "
+                         " m2 m3 m4 "
+                         " m5 m5 m5 "
+                         " m6 m6 m6 ";
+}
+
+.grid__m5 img{ 
+    margin-top: 100px;
+    height: 650px;
+}
+
+.grid__m6{
+    margin-top: 550px;
+}
+
+/* main areas */
+
+.grid__m1--areas{
+    grid-area: m1;
+}
+
+.grid__m2--areas{
+    grid-area: m2;
+    align-self: center;
+    justify-self: center;
+}
+
+.grid__m3--areas{
+    grid-area: m3;
+    align-self: center;
+    justify-self: center;
+}
+
+.grid__m4--areas{
+    grid-area: m4;
+    align-self: center;
+    justify-self: center;
+}
+
+.grid__m5--areas{
+    grid-area: m5;
+    
+}
+
+.grid__m6--areas{
+    grid-area: m6;
+}
+
+
+/* main // Fin */
+
+/* footer layout */
+
+.grid__l3--areas{
+    grid-area: l3;
+}
+
+.grid__l3{
+    margin-top: 900px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 300px;
+    grid-template-areas: " f1 f2 f3 ";
+}
+
+.grid__l3 .img{
+    height: 100px;
+}
+
+/* footer areas */
+.grid__f1--areas{
+    grid-area: f1;
+    justify-self: center;
+    align-self: center;
+}
+
+.grid__f2--areas{
+    grid-area: f2;
+    justify-self: center;
+    align-self: center;
+}
+.grid__f3--areas{
+    grid-area: f3;
+    justify-self: center;
+    align-self: center;
+}
+
+/* Index // Fin */
+
+
+/* @mediaquerys */
+
+@media (max-width: 1101px){
+    .grid__n1{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 100px;
+        grid-template-areas: " i1 i3 "
+                             " i2 i2 ";
+    }
+    .grid__n2{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 250px 250px;
+        grid-template-areas: " g1 "
+                             " g2 ";
+    }
+    .grid__l2{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 247px 100px 100px 100px 247px 248px;
+        grid-template-areas: " m1 "
+                             " m2 "
+                             " m3 "
+                             " m4 "
+                             " m5 "
+                             " m6 ";
+    }
+}
+
+/*
+.display{
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    grid-template-rows: 200px 500px 400px;
+    grid-template-areas: " h1 h2 h3 "
+                         " h5 h5 h5 "
+                         " h6 h6 h6 ";
+}
+
+.header__logo img{
+    width: 350px;
+    height:350px;
+}
+
+.header__autor img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 6px 3px 35px black;
+}
+
+.area_1{
+    grid-area: h1;
+    align-self: center;
+    justify-self: left;
+}
+
+.area_2{
+    grid-area: h2;
+    align-self: center;
+    justify-self: right;
+}
+
+.area_3{
+    grid-area: h3;
+    align-self: center;
+    justify-self: center;
+}
+
+.area_5{
+    grid-area: h5;
+    align-self: center;
+    justify-self: center;
+}
+
+.area_6{
+    grid-area: h6;
+}
+
+.navbar__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar__list a {
+    text-decoration: none;
+    color: slategrey;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.navbar__list a li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+
+
+.b1{
+    grid-area: b1;
+}
+
+.header{
+    animation-name: slider;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+}
+
+.area__5-2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px;
+    grid-template-areas: "i1 i2";
+}
+
+.i1{
+    grid-area: i1;
+    justify-self: left;
+    align-self: center;
+}
+
+.i2{
+    grid-area: i2;
+    justify-self: left;
+    align-self: center;
+}
+
+.buttom{
+    border: 2px solid green;
+    background-color: #3f4447;
+}
++/
+
+/* Animacion de slider con imagenes animado 
+@keyframes slider{
+    0%{
+        background-color: #bdc3c7;
+    }
+    25%{
+        background-color: #61696e;
+    }
+    50%{
+        background-color: #bdc3c7;
+    }
+    75%{
+        background-color: #3f4447;
+    }
+    100%{
+        background-color: #bdc3c7;
+    }
+}*/
+
