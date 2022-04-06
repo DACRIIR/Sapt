@@ -7,12 +7,9 @@
 /*  index  // Inicio */
 
 .grid{
-    background: #0F2027;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 700px 990px 300px;
+    grid-template-rows: 800px 990px 400px;
     grid-template-areas: "l1"
                          "l2"
                          "l3";
@@ -257,6 +254,35 @@
     }
 }
 
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex-2{
+    padding: 50px;
+    text-align: center;
+}
+.flex-3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex-4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex-4 img{
+    height: 50px;
+    width: 50px;
+}
+.carousel img{
+    width: 150px;
+    height: 650px;
+}
 /*
 .display{
     display: grid;
